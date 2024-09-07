@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bkgd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Space between columns */
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+}
+
+#icon {
+    border-radius: 35%;
+    transition: 0.8s;    
+    text-align: center;
+    padding: 20px;
+}
+
+#icon:hover {
+    background-color: rgba(240, 248, 255, 0.349);
+    color: rgb(199, 196, 196);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.58);
+    cursor:pointer;
+}
+
+.guitarImg {
+    height:200px;
+    width:200px;
+}
+
+.guitarImg:hover {
+    height:205px;
+    width:205px;
+}
+
+.cameraImg {
+    height:100px;
+    width:200px;
+}
+
+.cameraImg:hover {
+    height: 105px;
+    width: 205px;
+}
+
+.compImg {
+    height:130px;
+    width:220px;
+}
+
+.compImg:hover {
+    height: 135px;
+    width: 225px;
+}
+
+.photoImg {
+    height:200px;
+    width:150px;
+}
+
+.photoImg:hover {
+    height: 205px;
+    width: 155px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0,0,0,0.4);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Trigger Images */
+.trigger-image {
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: 10px; /* Space between images */
+}
+
+
